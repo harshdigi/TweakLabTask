@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_leaderboard">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.digitaldealsolution.tweeklabstask.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/navigation_my_kits"
+        android:name="com.digitaldealsolution.tweeklabstask.ui.mykits.MyKitsFragment"
+        android:label="@string/title_my_kits"
+        tools:layout="@layout/fragment_my_kits" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.digitaldealsolution.tweeklabstask.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_leaderboard"
+        android:name="com.digitaldealsolution.tweeklabstask.ui.leaderboard.LeaderboardFragment"
+        android:label="@string/title_leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.digitaldealsolution.tweeklabstask.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_home" />
+
+</navigation>
