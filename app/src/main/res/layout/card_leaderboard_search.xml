@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recyclerviewsearch_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginRight="12dp"
     android:layout_marginLeft="12dp"
     android:layout_marginTop="8dp"
-    app:cardElevation="10dp"
+    android:layout_marginRight="12dp"
     app:cardCornerRadius="20dp"
-    android:id="@+id/recyclerviewsearch_card">
+    app:cardElevation="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_constraint"
@@ -18,38 +17,39 @@
         android:padding="15dp">
 
 
-
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/my_pic"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:layout_marginStart="15dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/my_pic"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/profile_image"
-            android:text="Nitik Jain"
             android:layout_marginStart="15dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:text="Nitik Jain"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/score_leaderboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="5dp"
             android:text="89"
-            android:textSize="20sp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textColor="@color/black"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
